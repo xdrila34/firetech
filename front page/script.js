@@ -54,3 +54,58 @@ const button = document.querySelector(".glow-button4");
 // Disable the button
 button.disabled = true;
 
+document.addEventListener("DOMContentLoaded", function () {
+  const loadButton = document.getElementById("load");
+  const moreList = document.getElementById("more");
+
+  // Add a click event listener to the "Load more!" button
+  loadButton.addEventListener("click", function () {
+    // Hide the "Load more!" button
+    loadButton.style.display = "none";
+
+    // Show the "more" list
+    moreList.style.display = "grid";
+  });
+});
+const button = document.querySelector(".glow-button4");
+
+// Disable the button
+button.disabled = false;
+
+ document.addEventListener("DOMContentLoaded", function () {
+            const unloadButton = document.getElementById("unload");
+            const moreList = document.getElementById("more");
+
+            // Add a click event listener to the "Show less!" button
+            unloadButton.addEventListener("click", function () {
+                // Show the "Show less!" button
+                unloadButton.style.display = "none";
+
+                // Hide the "more" list
+                moreList.style.display = "none";
+            });
+
+
+const image5 = document.getElementById("image5");
+const originalImageSrc5 = "mon.png";
+const newImageSrc5 = "mon1.png";
+
+image5.addEventListener("mouseover", () => {
+  image5.src = newImageSrc5; // Change the image source on hover
+});
+
+image5.addEventListener("mouseout", () => {
+  image5.src = originalImageSrc5; // Revert to the original image source on unhover
+});
+
+const image6 = document.getElementById("image6");
+const originalImageSrc6 = "mou1.png";
+const newImageSrc6 = "mou.png";
+
+image6.addEventListener("mouseover", () => {
+  image6.src = newImageSrc6; // Change the image source on hover
+});
+
+image6.addEventListener("mouseout", () => {
+  image6.src = originalImageSrc6; // Revert to the original image source on unhover
+});
