@@ -1,288 +1,29 @@
-/* Reset the default browser styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Set the background color */
 body {
   background-color: #101820; /* Change this to set the overall background color to cyan */
   color: #ffffff;
   font-family: Arial, sans-serif;
 }
-main{
-    color: #101820;
-}
 
-
-h1 {
-  font-size: 3rem;
-  margin-top: 2rem;
-  text-align: center;
-  color: white; /* Change the heading color to yellow */
-  text-align: right;
-}
-
-/* Set the styles for the main content */
-main {
-  padding: 2rem;
-}
-
-section {
-  margin-bottom: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-  font-size: 29px;
-  margin-bottom: 1rem;
-}
-
-ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 2rem;
-}
-
-li {
-  background-color: #FEE715; /* Change the li boxes to light green */
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  
-}
-
-li:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-/*img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
-}*/
-
-h3 {
-  margin-bottom: 0.5rem;
-  font-size: 10;
-}
-
-p {
-  line-height: 1.5;
-}
-
-/* Set the styles for the contact form */
-form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  margin-top: 2rem;
-}
-
-label {
-  font-size: 1.2rem;
-}
-
-
-
-/* Set the styles for the footer */
-footer {
-  background-color: #000000; /* Change this to set the footer background color */
-  color: #ffffff;
-  padding: 1rem;
-}
-
-main img {
-  width: 800px;
-  height: 350px;
-}
-
-h1 {
-  font-weight: bold;
-}
-
-footer p {
-  font-weight: bold;
-  font-family: italic;
-  text-align: center;
-}
-/* Add this CSS to your style.css file */
-li {
-  list-style: none;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: flex-start; /* Align content to the top */
-}
-
-li img {
-  margin-right: 10px; /* Add some margin to separate the image from text */
-}
-
-li h2, li h3 {
-  margin: 0; /* Remove any default margin for h2 and h3 */
-  display: block; /* Display text elements as block to make them stack vertically */
-}
-.text-container {
-  display: flex;
-  flex-direction: column;
-}
-.button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;
-            border: none;
-            border-radius: 5px;
-            color: #101820;
-            margin-right: 10px; /* Add margin to separate the buttons */
-            transition: transform 0.2s; /* Add a transform transition */
-            pointer-events: auto;
-            cursor: pointer;
-        }
-
-        /* Outer glow button */
-        .outer-glow-button {
-            background-color: #FEE715;
-            box-shadow: 0 0 10px #101820;
-        }
-
-        /* Inner glow button */
-        .inner-glow-button {
-            background-color: #101820;
-            box-shadow: 0 0 10px #FEE715;
-            color: white;
-
-        }
-
-        
-
-        /* Add a hover effect */
-        .button:hover {
-            transform: translateY(-5px); /* Move the button 5 pixels up */
-        }
-
-        /* Container for buttons */
-        .button-container {
-            display: block;
-        }
-        hr{
-            height: 2px;
-            background-color: #101820;
-            border: none;
-        }
-      
-header {
-  display: flex; /* Use flexbox for positioning */
-  justify-content: flex; /* Align content to the right */
-}
-
-header img {
-  /* Optional: Set a max width for the image to prevent it from overflowing the header */
-  max-width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  scale: 20%;
-}
-/* styles.css */
-#image1 {
-  transition: 0.3s; /* Add a smooth transition for the image change effect */
-}
-/* styles.css */
-/* styles.css */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #101820;
-  color: #fff;
-  margin: 0;
-}
-
-.logo img {
-  width: 200px;
-}
-
-.search-bar {
+.div1 {
   display: flex;
   align-items: center;
 }
 
-.search-bar input {
-  border: 4px;
-  padding: 5px;
-  margin-right: 10px;
-  border: #FEE715;
-  background-color: #FEE715;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: Arial;
+.img-container {
+  flex: 1;
 }
 
-.search-bar button {
-  padding: 5px 10px;
-  background-color: #FEE715;
-  border: #FEE715;
-  color: #101820;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: Arial;
-}
-#image2 {
-  transition: 0.3s; /* Add a smooth transition for the image change effect */
-}
-body {
-    text-align: center;
-    padding: 50px;
+.img-container img {
+  scale: 60%;
 }
 
-.glow-button4 {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007f00; /* Green background color */
-    color: #fff; /* White text color */
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 255, 0, 0.7); /* Green inner glow effect */
-    transition: box-shadow 0.3s ease;
-    cursor: pointer;
-    pointer-events: none;
+.txt {
+  flex: 1;
+  padding: 0 20px; /* Adjust the padding as needed */
 }
-
-.glow-button4:hover {
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.9); /* Increase glow on hover */
-}
- @media (max-width: 768px) {
-      /* Modify the layout for the list items */
-      ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      ul li {
-        width: 100%;
-      }
-      ul li img {
-        order: 1; /* Change the order of the image */
-      }
-      ul li .text-container {
-        order: 2; /* Change the order of the text container */
-      }
-    }
-   
-
-   body{
-    background-color:  #101820;
-    margin-right: 300px;
-    padding: 50px;
-    text-align: left;
-    }
-    
-   p{
-    text-align: right;
-   }
-  
-
-    
+ 

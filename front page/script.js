@@ -67,23 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     moreList.style.display = "grid";
   });
 });
-const button = document.querySelector(".glow-button4");
 
-// Disable the button
-button.disabled = false;
-
- document.addEventListener("DOMContentLoaded", function () {
-            const unloadButton = document.getElementById("unload");
-            const moreList = document.getElementById("more");
-
-            // Add a click event listener to the "Show less!" button
-            unloadButton.addEventListener("click", function () {
-                // Show the "Show less!" button
-                unloadButton.style.display = "none";
-
-                // Hide the "more" list
-                moreList.style.display = "none";
-            });
 
 
 const image5 = document.getElementById("image5");
@@ -109,3 +93,12 @@ image6.addEventListener("mouseover", () => {
 image6.addEventListener("mouseout", () => {
   image6.src = originalImageSrc6; // Revert to the original image source on unhover
 });
+document.querySelector(".outer-glow-button").addEventListener("click", function() {
+    window.location.href = "produkt.html";
+});
+
+    document.querySelector(".inner-glow-button").addEventListener("click", function() {
+    window.location.href = "produkt.html";
+});
+
+
