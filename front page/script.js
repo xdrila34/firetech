@@ -100,5 +100,39 @@ document.querySelector(".outer-glow-button").addEventListener("click", function(
     document.querySelector(".inner-glow-button").addEventListener("click", function() {
     window.location.href = "produkt.html";
 });
+  
 
+const image7 = document.getElementById("image7");
+const originalImageSrc7 = "hxs.png";
+const newImageSrc7 = "hxs1.png";
 
+image7.addEventListener("mouseover", () => {
+  image7.src = newImageSrc7; // Change the image source on hover
+});
+
+image7.addEventListener("mouseout", () => {
+  image7.src = originalImageSrc7; // Revert to the original image source on unhover
+});
+
+const image10 = document.getElementById("image10");
+const originalImageSrc10 = "tas.png";
+const newImageSrc10 = "tas1.png";
+
+image10.addEventListener("mouseover", () => {
+  image10.src = newImageSrc10; // Change the image source on hover
+});
+
+image11.addEventListener("mouseout", () => {
+  image11.src = originalImageSrc11; // Revert to the original image source on unhover
+});
+const image11 = document.getElementById("image11");
+const originalImageSrc11 = "prc.png";
+const newImageSrc11 = "prc1.png";
+
+image11.addEventListener("mouseover", () => {
+  image11.src = newImageSrc11; // Change the image source on hover
+});
+
+image11.addEventListener("mouseout", () => {
+  image11.src = originalImageSrc11; // Revert to the original image source on unhover
+});

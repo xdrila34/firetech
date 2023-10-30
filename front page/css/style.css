@@ -151,7 +151,7 @@ li h2, li h3 {
         /* Inner glow button */
         .inner-glow-button {
             background-color: #101820;
-            box-shadow: 0 0 10px white;
+            box-shadow: 0 0 10px black;
             color: white;
 
         }
@@ -238,4 +238,8 @@ body {
 }
 #more{
   display: none;
-}          
+}
+.mySlides {display:none;} 
+header{
+  align-content: space-around;
+}      
